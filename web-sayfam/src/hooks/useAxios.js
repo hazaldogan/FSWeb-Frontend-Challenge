@@ -10,7 +10,7 @@ export const REQ_TYPES = Object.freeze({
 });
 
 export const useAxios = (initialValue = null) => {
-  const [loading, setLoading] = usestate(false);
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState(initialValue);
   const [error, setError] = useState("");
 
@@ -18,6 +18,7 @@ export const useAxios = (initialValue = null) => {
     setLoading(true);
     API[reqType](endpoint, payload || config, payload || config)
       .then((res) => {
+        console.log(res);
         setData(res.data);
         setError("");
       })
