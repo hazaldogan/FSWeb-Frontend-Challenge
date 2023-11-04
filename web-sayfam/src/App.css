@@ -21,6 +21,11 @@
   color: #caf181;
 }
 
+.header h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .choose-area {
   display: flex;
   gap: 2rem;
@@ -55,6 +60,10 @@
   text-align: left;
 }
 
+.lang-area {
+  cursor: pointer;
+}
+
 .button-area {
   margin-top: 10%;
   display: flex;
@@ -76,4 +85,16 @@
 
 .skills-area {
   background-color: #fff;
+  display: flex;
+  padding: 5% 10% 5% 10%;
+}
+
+.skills-list-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  flex-grow: 1;
+  flex-basis: auto;
 }
