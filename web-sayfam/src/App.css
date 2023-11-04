@@ -1,38 +1,79 @@
 .App {
   text-align: center;
+  margin: 0 10% 0 10%;
+  background-color: #caf181;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* FIRST AREA */
+
+.first-area {
+  background-color: #4731d3;
+  width: 75%;
+  padding: 5% 0 5% 0;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  margin: 0 0 0 15%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #caf181;
+}
+
+.choose-area {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  right: -7%;
+}
+
+.toggle-area {
+  height: 2em;
+  width: 2em;
+}
+
+.first-main-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 15%;
+}
+
+.first-title-area {
+  color: #caf181;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em 0 1em 0;
+}
+
+.first-desc-area {
+  color: #fff;
+}
+
+.left-area {
+  width: 45%;
+  text-align: left;
+}
+
+.button-area {
+  margin-top: 10%;
+  display: flex;
+  gap: 1em;
+  width: 80%;
+}
+
+.profile-image {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: absolute;
+  top: 19%;
+  right: -25%;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* SKILLS */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills-area {
+  background-color: #fff;
 }
