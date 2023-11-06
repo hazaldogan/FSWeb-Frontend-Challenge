@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
+import Profile from "./components/Profile";
 import { getUsersParams } from "./utils/endpoints";
 import { useAxios } from "./hooks/useAxios";
 import { useEffect } from "react";
@@ -32,6 +33,7 @@ function App() {
     <div className="App  dark:bg-zinc-900">
       <Header /* userName={userName} */ />
       <Skills />
+      <Profile />
     </div>
   );
 }

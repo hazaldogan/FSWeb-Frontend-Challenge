@@ -31,7 +31,7 @@ function Header() {
       <div className="first-main-area">
         <div className="left-area">
           <div className="first-title-area">
-            <h1>{lang === "en" ? headerData.title.en : headerData.title.tr}</h1>
+            <h2>{lang === "en" ? headerData.title.en : headerData.title.tr}</h2>
           </div>
           <div className="first-desc-area">
             <p>

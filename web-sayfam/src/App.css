@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 0 10% 0 10%;
+  margin: 0 20% 0 20%;
   background-color: #caf181;
 }
 
@@ -23,7 +23,7 @@
 
 .header h3 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .choose-area {
@@ -46,9 +46,13 @@
 
 .first-title-area {
   color: #caf181;
-  font-size: 2em;
   font-weight: bold;
   padding: 1em 0 1em 0;
+}
+
+.first-desc-area p {
+  font-size: 1em;
+  width: 130%;
 }
 
 .first-desc-area {
@@ -76,9 +80,10 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 19%;
-  right: -25%;
-  width: 50%;
+  top: 30%;
+  right: -13%;
+  width: 25%;
+  border-radius: 5%;
 }
 
 /* SKILLS */
@@ -90,7 +95,7 @@
   gap: 6em;
 }
 
-.skills-area h1 {
+.skills-area h2 {
   color: #4832d3;
   font-weight: bold;
 }
@@ -99,7 +104,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 75%;
-  gap: 3em;
+  gap: 5em;
 }
 
 .skill {
@@ -122,4 +127,76 @@
   color: #777;
   font-weight: 500;
   margin: 0;
+}
+
+/*  PROFILE  */
+
+.profile-area {
+  background-color: #4731d3;
+  padding: 5% 10% 5% 10%;
+  color: white;
+}
+
+.profile-area h2 {
+  text-align: start;
+  font-weight: bold;
+  color: #caf181;
+  margin-bottom: 5%;
+}
+
+.profile-main-area {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-info-area {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+}
+
+.profile-info-area h4 {
+  font-size: 1em;
+}
+
+.profile-info h6 {
+  color: #caf181;
+  margin: 0;
+  font-size: 0.7em;
+  width: 5em;
+}
+.profile-info p {
+  color: #caf181;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.about-area {
+  width: 40%;
+  text-align: start;
+}
+
+.about-area h4 {
+  font-size: 1em;
+}
+
+.about-area p {
+  font-size: 0.7em;
+}
+
+.middle-area {
+  padding-left: 5%;
+}
+
+.middle-area img {
+  text-align: start;
+  width: 80%;
+  border-radius: 5%;
 }

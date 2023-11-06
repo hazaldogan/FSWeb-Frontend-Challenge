@@ -9,6 +9,9 @@ import reduximg from "../images/skills/redux.png";
 import nodeimg from "../images/skills/node.png";
 import vscodeimg from "../images/skills/vscode.png";
 import figmaimg from "../images/skills/figma.png";
+import profileimg from "../images/profile.png";
+import projectimg1 from "../images/project/project1.png";
+import projectimg2 from "../images/project/project2.png";
 
 export const headerData = {
   title: {
@@ -59,12 +62,35 @@ export const skillsHeader = {
 };
 
 export const profileData = {
+  header: {
+    en: "Profile",
+    tr: "Profil",
+  },
   firstHeader: { en: "Basic Information", tr: "Temel Bilgiler" },
-  personal: {},
+  personal: {
+    birthdate: {
+      en: "Birthdate",
+      tr: "Doğum Tarihi",
+    },
+    location: {
+      en: "Location",
+      tr: "İkamet Şehri",
+    },
+    education: {
+      en: "Education",
+      tr: "Eğitim Durumu",
+    },
+    role: {
+      en: "Preferred Role",
+      tr: "Tercih Ettiği Rol",
+    },
+  },
   lastHeader: { en: "About Me", tr: "Hakkımda" },
-  description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-  image: "../images/profile.png",
+  description1:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+  description2:
+    "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+  image: profileimg,
 };
 
 export const projectData = [
@@ -79,7 +105,7 @@ export const projectData = [
       { en: "View Site", tr: "İncele" },
       { en: "GitHub", tr: "GitHub" },
     ],
-    image: "../images/project/project1.png",
+    image: projectimg1,
   },
   {
     header: "Journey",
@@ -92,9 +118,14 @@ export const projectData = [
       { en: "View Site", tr: "İncele" },
       { en: "GitHub", tr: "GitHub" },
     ],
-    image: "../images/project/project2.png",
+    image: projectimg2,
   },
 ];
+
+export const projectsHeader = {
+  en: "Projects",
+  tr: "Projeler",
+};
 
 export const footerData = {
   sendme: { en: "Send me a message!", tr: "Bana Ulaşın!" },

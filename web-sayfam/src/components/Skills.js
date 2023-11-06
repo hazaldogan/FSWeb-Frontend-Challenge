@@ -7,9 +7,9 @@ function Skills() {
   const { lang } = useContext(SiteGlobalContext);
   return (
     <div className="skills-area dark:bg-zinc-800">
-      <h1 className="dark:text-lime-200">
+      <h2 className="dark:text-lime-200">
         {lang === "tr" ? skillsHeader.tr : skillsHeader.en}
-      </h1>
+      </h2>
       <div className="skills-list-area">
         {skillsData.map((skill, i) => (
           <div className="skill" key={i}>
