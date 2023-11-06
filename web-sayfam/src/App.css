@@ -87,6 +87,7 @@
   background-color: #fff;
   display: flex;
   padding: 5% 10% 5% 10%;
+  gap: 5em;
 }
 
 .skills-area h1 {
@@ -97,24 +98,28 @@
 .skills-list-area {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
   width: 75%;
+  gap: 4em;
 }
 
 .skill {
-  border: 1px solid red;
   display: flex;
   flex-grow: 1;
   flex-basis: auto;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0;
+  width: 150px;
+  gap: 1em;
 }
 
 .skill img {
+  width: 65px;
 }
 
 .skill h6 {
-  font-size: 1.3em;
+  font-size: 1em;
   color: #777;
   font-weight: 500;
+  margin: 0;
 }

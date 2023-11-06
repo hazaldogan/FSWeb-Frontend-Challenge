@@ -8,7 +8,7 @@ function Skills() {
         {skillsData.map((skill, i) => (
           <div className="skill" key={i}>
             <img src={skill.image} />
-            <h6>{skill.text}</h6>
+            <h6 className="dark:text-white">{skill.text}</h6>
           </div>
         ))}
       </div>

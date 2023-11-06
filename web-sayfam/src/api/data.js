@@ -4,11 +4,11 @@ import githubDark from "../images/button/GithubButtonDark.png";
 import linkedInDark from "../images/button/LinkedinButtonDark.png";
 import firstimage from "../images/header.png";
 import jsimg from "../images/skills/js.png";
-import reactimg from "../images/skills/react.svg";
+import reactimg from "../images/skills/react.png";
 import reduximg from "../images/skills/redux.png";
-import nodeimg from "../images/skills/node.svg";
+import nodeimg from "../images/skills/node.png";
 import vscodeimg from "../images/skills/vscode.png";
-import figmaimg from "../images/skills/figma.svg";
+import figmaimg from "../images/skills/figma.png";
 
 export const headerData = {
   title: {
