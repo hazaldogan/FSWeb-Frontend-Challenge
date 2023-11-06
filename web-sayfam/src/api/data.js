@@ -3,7 +3,7 @@ import linkedIn from "../images/button/LinkedinButton.png";
 import githubDark from "../images/button/GithubButtonDark.png";
 import linkedInDark from "../images/button/LinkedinButtonDark.png";
 import firstimage from "../images/header.png";
-import jsimg from "../images/skills/js.svg";
+import jsimg from "../images/skills/js.png";
 import reactimg from "../images/skills/react.svg";
 import reduximg from "../images/skills/redux.png";
 import nodeimg from "../images/skills/node.svg";

@@ -89,12 +89,32 @@
   padding: 5% 10% 5% 10%;
 }
 
+.skills-area h1 {
+  color: #4832d3;
+  font-weight: bold;
+}
+
 .skills-list-area {
   display: flex;
   flex-wrap: wrap;
+  gap: 2em;
+  width: 75%;
 }
 
 .skill {
+  border: 1px solid red;
+  display: flex;
   flex-grow: 1;
   flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill img {
+}
+
+.skill h6 {
+  font-size: 1.3em;
+  color: #777;
+  font-weight: 500;
 }
