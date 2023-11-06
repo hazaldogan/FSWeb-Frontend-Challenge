@@ -53,6 +53,11 @@ export const skillsData = [
   },
 ];
 
+export const skillsHeader = {
+  en: "Skills",
+  tr: "Yetenekler",
+};
+
 export const profileData = {
   firstHeader: { en: "Basic Information", tr: "Temel Bilgiler" },
   personal: {},

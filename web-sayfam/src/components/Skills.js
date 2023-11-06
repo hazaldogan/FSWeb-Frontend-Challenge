@@ -1,9 +1,15 @@
+import { useContext } from "react";
 import { skillsData } from "../api/data";
+import { skillsHeader } from "../api/data";
+import { SiteGlobalContext } from "../contexts/SiteGlobalProvider";
 
 function Skills() {
+  const { lang } = useContext(SiteGlobalContext);
   return (
     <div className="skills-area dark:bg-zinc-800">
-      <h1 className="dark:text-lime-200">Skills</h1>
+      <h1 className="dark:text-lime-200">
+        {lang === "tr" ? skillsHeader.tr : skillsHeader.en}
+      </h1>
       <div className="skills-list-area">
         {skillsData.map((skill, i) => (
           <div className="skill" key={i}>
