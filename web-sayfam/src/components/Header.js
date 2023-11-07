@@ -3,7 +3,7 @@ import { SiteGlobalContext } from "../contexts/SiteGlobalProvider";
 import { headerData } from "../api/data";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-function Header() {
+function Header({ userName }) {
   const { theme, toggleDarkMode, lang, setLang } =
     useContext(SiteGlobalContext);
 
@@ -13,7 +13,7 @@ function Header() {
   return (
     <div className="first-area dark:bg-indigo-950">
       <div className="header">
-        <h3>hazal</h3>
+        <h3>{userName}</h3>
         <div className="choose-area">
           <div className="lang-area" onClick={changeLang}>
             {lang === "en" ? "Türkçeye Geç" : "Switch To English"}

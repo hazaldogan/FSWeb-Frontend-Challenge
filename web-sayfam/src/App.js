@@ -3,22 +3,22 @@ import "./App.css";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
-import { getUsersParams } from "./utils/endpoints";
-import { useAxios } from "./hooks/useAxios";
+import Projects from "./components/Projects";
 import { useEffect } from "react";
 import { Spinner, Alert } from "reactstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { getUsers } from "./store/actions/usersActions";
 
 function App() {
-  /* const [getUsers, users, usersLoading, usersError] = useAxios([]);
-  useEffect(() => {
-    getUsers(getUsersParams());
-  }, []);
+  const dispatch = useDispatch();
+  const user = useSelector((store) => store.users);
 
-  const userName = users.map((user) => {
-    return user.firstName;
-  });
+  useEffect(() => {
+    dispatch(getUsers());
+  }, [dispatch]);
+  /* 
   if (usersLoading) {
-    return <Spinner size="lg" />;
+    return <Spinner />;
   }
 
   if (usersError) {
@@ -31,9 +31,20 @@ function App() {
 
   return (
     <div className="App  dark:bg-zinc-900">
-      <Header /* userName={userName} */ />
+      {user.isFetching && (
+        <div className="main-container flex items-center justify-center content-center">
+          <Spinner color="info">Loading...</Spinner>
+        </div>
+      )}
+      {user.error && (
+        <div className="main-container flex items-center justify-center content-center">
+          <Alert color="danger">{user.error}</Alert>
+        </div>
+      )}
+      <Header userName={user.users.first_name} />
       <Skills />
       <Profile />
+      <Projects />
     </div>
   );
 }

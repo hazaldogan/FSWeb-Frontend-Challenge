@@ -7,9 +7,8 @@ export const GET_USERS_ERROR = "got an error from the API";
 
 export const getUsers = () => (dispatch) => {
   dispatch(getUsersFetching());
-  API.get("/users")
+  API.get("/users/2")
     .then((res) => {
-      console.log(res.data.data);
       dispatch(getUsersSuccess(res.data.data));
     })
     .catch((err) => {
