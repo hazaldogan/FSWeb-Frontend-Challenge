@@ -20,7 +20,7 @@ function Profile() {
                 ? profileData.personal.birthdate.tr
                 : profileData.personal.birthdate.en}
             </h6>
-            <p>24.03.1996</p>
+            <p>11.07.1997</p>
           </div>
           <div className="profile-info">
             <h6>
@@ -28,7 +28,7 @@ function Profile() {
                 ? profileData.personal.location.tr
                 : profileData.personal.location.en}
             </h6>
-            <p>Ankara</p>
+            <p>Sivas</p>
           </div>
           <div className="profile-info">
             <h6>
@@ -36,7 +36,7 @@ function Profile() {
                 ? profileData.personal.education.tr
                 : profileData.personal.education.en}
             </h6>
-            <p>Hacettepe Ünv.Biyoloji Lisans, 2016</p>
+            <p>Sivas Cumhuriyet üniversitesi,2020</p>
           </div>
           <div className="profile-info">
             <h6>

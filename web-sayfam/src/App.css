@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 0 20% 0 20%;
+  margin: 0 20%;
   background-color: #caf181;
 }
 
@@ -8,13 +8,13 @@
 
 .first-area {
   background-color: #4731d3;
-  width: 75%;
-  padding: 5% 0 5% 0;
+  width: 70%;
+  padding: 5% 0;
   position: relative;
 }
 
 .header {
-  margin: 0 0 0 15%;
+  margin: 0 0 0 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,13 +41,13 @@
 .first-main-area {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 15%;
+  margin: 0 0 0 20%;
 }
 
 .first-title-area {
   color: #caf181;
   font-weight: bold;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
 .first-desc-area p {
@@ -91,7 +91,7 @@
 .skills-area {
   background-color: #fff;
   display: flex;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 15%;
   gap: 6em;
 }
 
@@ -114,7 +114,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0;
-  width: 150px;
+  width: 140px;
   gap: 1em;
 }
 
@@ -133,7 +133,7 @@
 
 .profile-area {
   background-color: #4731d3;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 15%;
   color: white;
 }
 
@@ -192,11 +192,82 @@
 }
 
 .middle-area {
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
 .middle-area img {
   text-align: start;
   width: 80%;
   border-radius: 5%;
+}
+
+/* PROJECTS */
+.projects-area {
+  padding: 5% 15%;
+}
+
+.projects-area h2 {
+  color: #4731d3;
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.projects-main-area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.project {
+  display: flex;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 3%;
+}
+
+.project-img {
+  border-radius: 3%;
+  width: 150%;
+}
+
+.project-details {
+  padding: 5% 3%;
+}
+
+.project-details h6 {
+  color: #4832d3;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.project-details p,
+.project-buttons,
+.project-links {
+  font-size: 0.7em;
+}
+
+.project-buttons {
+  display: flex;
+  column-gap: 1em;
+}
+
+.button {
+  background-color: #4832d3;
+  color: #fff;
+  text-decoration: none;
+  width: 13%;
+  border-radius: 45%;
+  font-size: 0.9em;
+  margin-bottom: 3%;
+}
+
+.project-links {
+  display: flex;
+  column-gap: 1em;
+}
+
+.project-links a {
+  color: black;
+  font-weight: 600;
 }

@@ -4,14 +4,22 @@ import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Spinner, Alert } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "./store/actions/usersActions";
+import { SiteGlobalContext } from "./contexts/SiteGlobalProvider";
 
 function App() {
   const dispatch = useDispatch();
   const user = useSelector((store) => store.users);
+  const { theme } = useContext(SiteGlobalContext);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   useEffect(() => {
     dispatch(getUsers());
