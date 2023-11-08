@@ -4,8 +4,16 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 export const SiteGlobalContext = createContext();
 
 export const SiteGlobalProvider = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage("theme", "light");
-  const [lang, setLang] = useLocalStorage("lang", "tr");
+  const darkmode = localStorage.getItem("theme");
+  let isDark = "light";
+  if (
+    darkmode === null &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    isDark = "dark";
+  }
+  const [theme, setTheme] = useLocalStorage("theme", isDark);
+  const [lang, setLang] = useLocalStorage("lang", navigator.language);
 
   const toggleDarkMode = () => {
     if (theme === "dark") {
