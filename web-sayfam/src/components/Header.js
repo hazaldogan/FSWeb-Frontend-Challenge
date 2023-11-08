@@ -16,7 +16,7 @@ function Header({ userName }) {
         <h3>{userName}</h3>
         <div className="choose-area">
           <div className="lang-area" onClick={changeLang}>
-            {lang === "en" ? "Türkçeye Geç" : "Switch To English"}
+            {lang === "tr" ? "Switch To English" : "Türkçeye Geç"}
           </div>
           <div className="toggle-area">
             <DarkModeSwitch
@@ -31,13 +31,13 @@ function Header({ userName }) {
       <div className="first-main-area">
         <div className="left-area">
           <div className="first-title-area">
-            <h2>{lang === "en" ? headerData.title.en : headerData.title.tr}</h2>
+            <h2>{lang === "tr" ? headerData.title.tr : headerData.title.en}</h2>
           </div>
           <div className="first-desc-area">
             <p>
-              {lang === "en"
-                ? headerData.description.en
-                : headerData.description.tr}
+              {lang === "tr"
+                ? headerData.description.tr
+                : headerData.description.en}
             </p>
           </div>
           <div className="button-area">

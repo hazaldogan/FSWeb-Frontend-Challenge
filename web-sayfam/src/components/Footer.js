@@ -17,18 +17,17 @@ function Footer({ email }) {
         <p className="email dark:text-violet-400">{email}</p>
       </a>
       <div className="social-media-area">
-        {theme === "dark" &&
-          footerData.social_dark.map((e, i) => (
-            <a href="#">
-              <img key={i} src={e} />
-            </a>
-          ))}
-        {theme === "light" &&
-          footerData.social.map((e, i) => (
-            <a href="#">
-              <img key={i} src={e} />
-            </a>
-          ))}
+        {theme === "dark"
+          ? footerData.social_dark.map((e, i) => (
+              <a key={i} href="#">
+                <img src={e} />
+              </a>
+            ))
+          : footerData.social.map((e, i) => (
+              <a key={i} href="#">
+                <img src={e} />
+              </a>
+            ))}
       </div>
     </div>
   );

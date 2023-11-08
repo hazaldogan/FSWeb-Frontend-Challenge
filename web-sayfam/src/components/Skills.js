@@ -5,6 +5,7 @@ import { SiteGlobalContext } from "../contexts/SiteGlobalProvider";
 
 function Skills() {
   const { lang } = useContext(SiteGlobalContext);
+
   return (
     <div className="skills-area dark:bg-zinc-800">
       <h2 className="dark:text-lime-200">
