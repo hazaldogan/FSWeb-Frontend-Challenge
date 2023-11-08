@@ -12,6 +12,14 @@ import figmaimg from "../images/skills/figma.png";
 import profileimg from "../images/profile.png";
 import projectimg1 from "../images/project/project1.png";
 import projectimg2 from "../images/project/project2.png";
+import twitter from "../images/socialmedia/twitter.svg";
+import codepen from "../images/socialmedia/codepen.svg";
+import atsign from "../images/socialmedia/at-sign.svg";
+import instagram from "../images/socialmedia/instagram.svg";
+import twitter_dark from "../images/socialmedia/twitter-dark.svg";
+import codepen_dark from "../images/socialmedia/codepen-dark.svg";
+import atsign_dark from "../images/socialmedia/at-sign-dark.svg";
+import instagram_dark from "../images/socialmedia/instagram-dark.svg";
 
 export const headerData = {
   title: {
@@ -133,10 +141,6 @@ export const footerData = {
     en: "Got a question or proposal, or just want to say hello? Go ahead.",
     tr: "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? İlerleyin.",
   },
-  social: [
-    "../images/socialmedia/twitter.svg",
-    "../images/socialmedia/codepen.svg",
-    "../images/socialmedia/at-sign.svg",
-    "../images/socialmedia/instagram.svg",
-  ],
+  social: [twitter, codepen, atsign, instagram],
+  social_dark: [twitter_dark, codepen_dark, atsign_dark, instagram_dark],
 };

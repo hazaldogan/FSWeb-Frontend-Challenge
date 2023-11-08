@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import { useContext, useEffect } from "react";
 import { Spinner, Alert } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -53,6 +54,7 @@ function App() {
       <Skills />
       <Profile />
       <Projects />
+      <Footer email={user.users.email} />
     </div>
   );
 }
