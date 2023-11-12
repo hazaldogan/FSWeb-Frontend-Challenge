@@ -110,7 +110,7 @@ export const projectData = [
     },
     buttons: ["react", "redux", "vercel"],
     links: [
-      { en: "View Site", tr: "İncele" },
+      { en: "View Site", tr: "Siteye Gözat" },
       { en: "GitHub", tr: "GitHub" },
     ],
     image: projectimg1,

@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  margin: 0 20%;
   background-color: #caf181;
 }
 
@@ -23,14 +22,14 @@
 
 .header h3 {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .choose-area {
   display: flex;
   gap: 2rem;
   position: absolute;
-  right: -7%;
+  right: -5%;
 }
 
 .toggle-area {
@@ -50,8 +49,12 @@
   padding: 1em 0;
 }
 
+.first-title-area h2 {
+  font-size: 3em;
+}
+
 .first-desc-area p {
-  font-size: 1em;
+  font-size: 2em;
   width: 130%;
 }
 
@@ -92,19 +95,20 @@
   background-color: #fff;
   display: flex;
   padding: 5% 15%;
-  gap: 6em;
+  gap: 10em;
 }
 
 .skills-area h2 {
   color: #4832d3;
   font-weight: bold;
+  font-size: 3em;
 }
 
 .skills-list-area {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
-  gap: 5em;
+  width: 100%;
+  gap: 10em;
 }
 
 .skill {
@@ -118,12 +122,8 @@
   gap: 1em;
 }
 
-.skill img {
-  width: 65px;
-}
-
 .skill h6 {
-  font-size: 1em;
+  font-size: 1.5em;
   color: #777;
   font-weight: 500;
   margin: 0;
@@ -140,6 +140,7 @@
 .profile-area h2 {
   text-align: start;
   font-weight: bold;
+  font-size: 3em;
   color: #caf181;
   margin-bottom: 5%;
 }
@@ -157,19 +158,19 @@
 }
 
 .profile-info-area h4 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .profile-info h6 {
   color: #caf181;
   margin: 0;
-  font-size: 0.7em;
+  font-size: 1em;
   width: 5em;
 }
 .profile-info p {
   color: #caf181;
   margin: 0;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 .profile-info {
@@ -184,11 +185,11 @@
 }
 
 .about-area h4 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .about-area p {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 .middle-area {
@@ -210,13 +211,14 @@
   color: #4731d3;
   text-align: start;
   font-weight: bold;
+  font-size: 3em;
   margin-bottom: 5%;
 }
 
 .projects-main-area {
   display: flex;
   flex-direction: column;
-  row-gap: 2em;
+  row-gap: 3em;
 }
 
 .project {
@@ -238,13 +240,14 @@
 .project-details h6 {
   color: #4832d3;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2em;
+  padding-bottom: 0.5em;
 }
 
 .project-details p,
 .project-buttons,
 .project-links {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 .project-buttons {
@@ -256,10 +259,10 @@
   background-color: #4832d3;
   color: #fff;
   text-decoration: none;
-  width: 13%;
-  border-radius: 23px;
-  font-size: 0.9em;
-  margin-bottom: 3%;
+  width: 19%;
+  border-radius: 20px;
+  font-size: 1em;
+  margin-bottom: 4%;
 }
 
 .project-links {
@@ -286,14 +289,16 @@
 .footer h2 {
   color: #4832d3;
   font-weight: bold;
+  font-size: 3em;
 }
 
 .footer p {
   width: 45%;
+  font-size: 1.5em;
 }
 
 .footer a {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #4832d3;
   font-weight: 500;
   text-decoration: none;
@@ -308,10 +313,11 @@
   justify-content: center;
   align-items: center;
   padding-left: 2%;
+  gap: 1em;
 }
 
 .social-media-area a,
 .social-media-area img {
-  width: 60%;
+  width: 100%;
   padding-top: 4%;
 }
