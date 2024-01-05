@@ -44,7 +44,7 @@ function Profile() {
                 ? profileData.personal.role.tr
                 : profileData.personal.role.en}
             </h6>
-            <p>Frontend, UI</p>
+            <p>Fullstack</p>
           </div>
         </div>
         <div className="middle-area">

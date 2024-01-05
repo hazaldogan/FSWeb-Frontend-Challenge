@@ -50,11 +50,11 @@ function App() {
           <Alert color="danger">{user.error}</Alert>
         </div>
       )}
-      <Header userName={user.users.first_name} />
+      <Header userName="Hazal" />
       <Skills />
       <Profile />
       <Projects />
-      <Footer email={user.users.email} />
+      <Footer email="hazl.dogann@gmail.com" />
     </div>
   );
 }

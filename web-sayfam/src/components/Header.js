@@ -41,14 +41,14 @@ function Header({ userName }) {
             </p>
           </div>
           <div className="button-area">
-            <a href="https://github.com/">
+            <a href="https://github.com/hazaldogan">
               <img
                 src={
                   theme === "light" ? headerData.github : headerData.githubDark
                 }
               />
             </a>
-            <a href="https://linkedin.com/">
+            <a href="https://linkedin.com/in/hazaldogan">
               <img
                 src={
                   theme === "light"
